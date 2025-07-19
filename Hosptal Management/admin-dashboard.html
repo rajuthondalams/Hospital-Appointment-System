@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hospital Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="index.html" class="card">Home</a>
+  <h2>Hospital Admin Dashboard</h2>
+
+  <select id="hospitalSelect"></select>
+  <button id="loadStats">Load Stats</button>
+
+  <hr />
+
+  <h3>Doctors in Hospital</h3>
+  <ul id="doctorsList"></ul>
+
+  <h3>Total Consultations Booked</h3>
+  <p id="totalConsultations">0</p>
+
+  <h3>Total Revenue Generated</h3>
+  <p id="totalRevenue">₹0</p>
+
+  <h3>Revenue per Doctor</h3>
+  <ul id="revenuePerDoctor"></ul>
+
+  <h3>Revenue per Department</h3>
+  <ul id="revenuePerDepartment"></ul>
+
+  <script src="script/admin-dashboard.js"></script>
+</body>
+</html>

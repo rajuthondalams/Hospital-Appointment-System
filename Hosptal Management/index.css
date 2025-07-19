@@ -1,0 +1,67 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #2c3e50;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2980b9;
+}
+
+/* Container for Cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+}
+
+/* Card Links */
+.card {
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(41, 128, 185, 0.2);
+  background-color: #eaf4fc;
+}
+
+/* Responsive Fix */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    font-size: 1rem;
+    padding: 16px;
+  }
+}
