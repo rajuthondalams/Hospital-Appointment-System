@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hospital Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="nav-home">
+  <a href="index.html" class="card">Home</a>
+</div>
+
+  <h2>Register Hospital</h2>
+  <form id="hospitalForm">
+    <input type="text" placeholder="Hospital Name" id="hospitalName" required />
+    <input type="text" placeholder="Location" id="hospitalLocation" required />
+    <button type="submit">Register</button>
+  </form>
+  <hr />
+  <h3>Registered Hospitals</h3>
+  <ul id="hospitalList"></ul>
+
+  <script src="script/admin.js"></script>
+</body>
+</html>

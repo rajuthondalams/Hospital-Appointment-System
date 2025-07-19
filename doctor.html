@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="nav-home">
+  <a href="index.html" class="card">Home</a>
+</div>
+
+  <h2>Doctor Registration</h2>
+  <form id="doctorForm">
+    <input type="text" id="doctorName" placeholder="Full Name" required />
+    <input type="text" id="qualifications" placeholder="Qualifications" required />
+    <input type="text" id="specializations" placeholder="Specializations (comma separated)" required />
+    <input type="number" id="experience" placeholder="Years of Experience" required />
+    <button type="submit">Register Doctor</button>
+  </form>
+
+  <hr />
+
+  <h3>Associate with Hospital</h3>
+  <form id="associateForm">
+    <select id="hospitalSelect" required></select>
+    <input type="text" id="associatedSpecializations" placeholder="Matching Specialization" required />
+    <input type="number" id="consultationFee" placeholder="Consultation Fee (₹)" required />
+    <input type="datetime-local" id="availableSlot" required />
+    <button type="submit">Associate & Add Slot</button>
+  </form>
+
+  <hr />
+  <h3>Doctor Availability</h3>
+  <ul id="availabilityList"></ul>
+
+  <script src="script/doctor.js"></script>
+</body>
+</html>

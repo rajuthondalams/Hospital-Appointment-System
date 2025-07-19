@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <div class="nav-home">
+  <a href="index.html" class="card">Home</a>
+</div>
+
+  <h2>Patient Registration</h2>
+  <form id="patientForm">
+    <input type="text" id="patientName" placeholder="Full Name" required />
+    <select id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+    <input type="date" id="dob" required />
+    <input type="text" id="uniqueId" placeholder="Aadhar / Passport Number" required />
+    <button type="submit">Register Patient</button>
+  </form>
+
+  <hr />
+
+  <h3>Search & Book Doctors</h3>
+  <form id="searchForm">
+    <input type="text" id="filterSpecialization" placeholder="Specialization (e.g., Cardiology)" />
+    <button type="submit">Search</button>
+  </form>
+
+  <ul id="searchResults"></ul>
+
+  <hr />
+  <h3>My Consultations</h3>
+  <ul id="consultationHistory"></ul>
+
+  <script src="script/patient.js"></script>
+</body>
+</html>
